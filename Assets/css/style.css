@@ -2,12 +2,13 @@
     --main-color: rgb(166, 162, 149);
     --secondary-color: rgb(55, 45, 27);
     --tertiary-color: rgb(255, 239, 253);
-    --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font: Arial, Helvetica, sans-serif;
 }
 
 body{
     background-color: var(--main-color);
-    font-family: var(--font)
+    font-family: var(--font);
+    font-size: 17px;
 }
 
 header{
@@ -35,4 +36,20 @@ header nav ul li a{
 
 header h1{
     font-size: 50px;
+}
+
+#about-me{
+    border: 5px solid var(--tertiary-color);
+    min-height: 100px;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    margin-top: 5px;
+}
+#about-me h1{
+text-align: center;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+#about-me p{
+text-align: center;
 }

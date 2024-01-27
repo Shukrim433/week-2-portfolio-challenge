@@ -1,6 +1,38 @@
 :root{
     --main-color: rgb(166, 162, 149);
-    --secondary-color: rgb(95, 81, 57);
-    --tertiary-color: rgb(255, 237, 253);
+    --secondary-color: rgb(55, 45, 27);
+    --tertiary-color: rgb(255, 239, 253);
+    --font: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+body{
+    background-color: var(--main-color);
+    font-family: var(--font)
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    background-color: var(--secondary-color);
+    color: var(--tertiary-color);
+    padding: 1%;
+    min-height: 100px;
+}
+
+header nav ul{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    min-width: 270px;
+}
+
+header nav ul li a{
+    color: var(--tertiary-color);
+    font-size: 20px;
+}
+
+header h1{
+    font-size: 50px;
+}

@@ -75,7 +75,7 @@ color: var(--tertiary-color);
     border: 1px solid var(--secondary-color);
     background-color: var(--main-color);
     flex: 0 0 70%;
-    overflow: hidden;
+    overflow:hidden;
     height: 700px;
 }
 .other-projects{

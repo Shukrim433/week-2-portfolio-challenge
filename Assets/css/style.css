@@ -53,7 +53,8 @@ color: var(--secondary-color);
 background-color: var(--fourth-color);
 font-size: 25px;
 font-weight: bold;
-
+border-radius: 7px;
+margin-bottom: 10px;
 }
 #about-me p{
 margin-top: 25px;
@@ -72,19 +73,34 @@ color: var(--tertiary-color);
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
+    padding: 1%;
 }
 
 #project-1{
-    border: 1px solid var(--secondary-color);
     background-color: var(--main-color);
-    flex: 0 0 70%;
+    flex: 2 0 66.666%;
     overflow: hidden;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    transition: all 0.5s ease-in-out;
+}
+#image-1{
+    border-radius: 7px;
+    border: 1px solid transparent;
+    transition: all 0.5s ease-in-out;
 }
 .other-projects{
-    border: 1px solid var(--secondary-color);
     background-color: var(--main-color);
-    flex: 0 0 30%;
+    flex: 1 0 33.333%;
     overflow: hidden;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    transition: all 0.5s ease-in-out;
+}
+.image-2{
+    border-radius: 7px;
+    border: 1px solid transparent;
+    transition: all 0.5s ease-in-out;
 }
 
 #contact-me{
@@ -104,6 +120,7 @@ color: var(--tertiary-color);
     justify-content: space-between;
     min-width: 270px;
 }
+/*
 #last-header{
 padding: 1%;
 color: var(--secondary-color);
@@ -111,12 +128,35 @@ background-color: var(--fourth-color);
 font-size: 25px;
 font-weight: bold;
 }
+*/
 
 @media screen and (max-width: 790px){
-#header-main, #work, #project-1{
+#header-main, #work{
     flex-direction: column;
 }
+#project-1, .other-projects{
+    overflow: hidden;
 }
+}
+
+#work #project-1 :hover{
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
+    cursor: grab;
+}
+#work #project-1 a #image-1 :hover{
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
+    cursor: grab;
+}
+#work .other-projects :hover{
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
+    cursor: grab;
+}
+#work #project-1 .image-2 :hover{
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);
+    cursor: grab;
+}
+
+
 
 
 /*@media screen and (max-width: 768px) {

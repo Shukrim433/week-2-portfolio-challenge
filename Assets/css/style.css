@@ -64,6 +64,9 @@ color: var(--tertiary-color);
 #work{
     display: flex;
     flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
     border: 5px solid var(--secondary-color);
     background-color: var(--main-color);
     margin-top: 10px;
@@ -75,13 +78,13 @@ color: var(--tertiary-color);
     border: 1px solid var(--secondary-color);
     background-color: var(--main-color);
     flex: 0 0 70%;
-    overflow:hidden;
-    height: 700px;
+    overflow: hidden;
 }
 .other-projects{
     border: 1px solid var(--secondary-color);
     background-color: var(--main-color);
     flex: 0 0 30%;
+    overflow: hidden;
 }
 
 #contact-me{
@@ -110,7 +113,7 @@ font-weight: bold;
 }
 
 @media screen and (max-width: 790px){
-#header-main, #work{
+#header-main, #work, #project-1{
     flex-direction: column;
 }
 }

@@ -53,6 +53,19 @@ body{
     border: 1px solid transparent;
     transition: all 0.5s ease-in-out;
     }
+.project-headers{
+    text-align: center;
+    padding: 1%;
+    min-height: 20px;
+    color: var(--secondary-color);
+    background-color: var(--fourth-color);
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    transition: all 0.5s ease-in-out;
+    }
 
 #about-me{
     border: 5px solid var(--secondary-color);
@@ -72,8 +85,6 @@ color: var(--tertiary-color);
 #work{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     border: 5px solid var(--secondary-color);
     background-color: var(--main-color);
     margin-top: 10px;
@@ -86,7 +97,7 @@ color: var(--tertiary-color);
 
 #project-1{
     background-color: var(--main-color);
-    flex: 2 0 66.666%;
+    flex: 0 0 66.666%;
     border-radius: 7px;
     border: 1px solid transparent;
     transition: all 0.5s ease-in-out;
@@ -95,10 +106,11 @@ color: var(--tertiary-color);
     border-radius: 7px;
     border: 1px solid transparent;
     transition: all 0.5s ease-in-out;
+    margin-left: 150px;
     }
 .other-projects{
     background-color: var(--main-color);
-    flex: 1 0 33.333%;
+    flex: 0 0 33.333%;
     overflow: hidden;
     border-radius: 7px;
     border: 1px solid transparent;
@@ -145,12 +157,21 @@ font-weight: bold;
         flex-direction: column;
     }
     #work{
-        flex-wrap: wrap;
+        flex-direction: column;
         overflow:hidden;
-        max-width: 100%; /* Limit maximum width of the image */
-        width: 100%; /* Ensure image resizes proportionally within the flex item */
-        height: auto; /*Maintain aspect ratio */
-    
+        padding: 0%;
+    }
+    #project-1{
+        flex: 0 0 66.666%;
+    }
+    .other-projects{
+        flex: 0 0 33.333%;
+    }
+    #image-1{
+        margin-left: 0px;
+    }
+    .project-headers{
+        text-align: left;
     }
     /*.other-headers{
         

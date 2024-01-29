@@ -72,7 +72,6 @@ color: var(--tertiary-color);
 #work{
     display: flex;
     flex-wrap: wrap;
-    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     border: 5px solid var(--secondary-color);
@@ -82,12 +81,12 @@ color: var(--tertiary-color);
     margin-right: 10px;
     padding: 1%;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 #project-1{
     background-color: var(--main-color);
     flex: 2 0 66.666%;
-    overflow: hidden;
     border-radius: 7px;
     border: 1px solid transparent;
     transition: all 0.5s ease-in-out;
@@ -96,8 +95,7 @@ color: var(--tertiary-color);
     border-radius: 7px;
     border: 1px solid transparent;
     transition: all 0.5s ease-in-out;
-    appearance: none;
-}
+    }
 .other-projects{
     background-color: var(--main-color);
     flex: 1 0 33.333%;
@@ -129,7 +127,7 @@ color: var(--tertiary-color);
     justify-content: space-between;
     min-width: 270px;
 }
-/*
+
 #last-header{
 padding: 1%;
 color: var(--secondary-color);
@@ -137,16 +135,29 @@ background-color: var(--fourth-color);
 font-size: 25px;
 font-weight: bold;
 }
+/*#contact-me ul li a{
+    color: var(--fourth-color);
+}
 */
 
 @media screen and (max-width: 790px){
-#header-main, #work{
-    flex-direction: column;
+    #header-main, #work{
+        flex-direction: column;
+    }
+    #work{
+        flex-wrap: wrap;
+        overflow:hidden;
+        max-width: 100%; /* Limit maximum width of the image */
+        width: 100%; /* Ensure image resizes proportionally within the flex item */
+        height: auto; /*Maintain aspect ratio */
+    
+    }
+    /*.other-headers{
+        
+    }*/
 }
-#project-1, .other-projects{
-    overflow: hidden;
-}
-}
+
+
 
 #work #project-1 :hover{
     box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.8);

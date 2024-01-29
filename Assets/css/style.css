@@ -53,6 +53,7 @@ body{
     border: 1px solid transparent;
     transition: all 0.5s ease-in-out;
     }
+    /*
 .project-headers{
     text-align: center;
     padding: 1%;
@@ -66,6 +67,7 @@ body{
     border: 1px solid transparent;
     transition: all 0.5s ease-in-out;
     }
+    */
 
 #about-me{
     border: 5px solid var(--secondary-color);
@@ -107,7 +109,6 @@ color: var(--tertiary-color);
     border-radius: 7px;
     border: 1px solid transparent;
     transition: all 0.5s ease-in-out;
-    margin-left: 150px;
     }
 .other-projects{
     background-color: var(--main-color);
@@ -165,11 +166,11 @@ font-weight: bold;
     }
    /* #project-1{
         flex: 0 0 66.666%;
-    }
-    .other-projects{
-        flex: 0 0 33.333%;
     }*/
-    #image-1{
+    .other-projects{
+        width: 100%
+    }
+    /*#image-1{
         margin-left: 0px;
     }
     .project-headers{
@@ -179,6 +180,12 @@ font-weight: bold;
         
     }*/
 }
+/*@media screen and(min-width:790px){
+    #image-1{
+        margin-left: 150px;
+    }
+} make it so the picture is centered when sull screen or just use bigger picture
+*/
 
 
 

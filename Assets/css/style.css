@@ -52,7 +52,7 @@ body{
     border-radius: 7px;
     border: 1px solid transparent;
     transition: all 0.5s ease-in-out;
-    }
+}
 
 #about-me{
     border: 5px solid var(--secondary-color);
@@ -127,18 +127,14 @@ color: var(--tertiary-color);
     justify-content: space-between;
     min-width: 270px;
 }
-
-#last-header{
-padding: 1%;
-color: var(--secondary-color);
-background-color: var(--fourth-color);
-font-size: 25px;
-font-weight: bold;
-}
-/*#contact-me ul li a{
+#contact-me ul li a{
     color: var(--fourth-color);
 }
-*/
+#contact-me ul li{
+    text-decoration: underline;
+}
+
+
 
 @media screen and (max-width: 790px){
     #header-main, #work{

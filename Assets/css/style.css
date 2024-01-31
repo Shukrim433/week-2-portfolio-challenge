@@ -68,6 +68,12 @@ margin-top: 25px;
 text-align: center;
 color: var(--tertiary-color);
 }
+#image-3{
+    margin-left: 685px;
+    width:100px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
 
 #work{
     display: flex;
@@ -158,6 +164,7 @@ color: var(--tertiary-color);
     }
    
 }
+
 
 
 #work #project-1 :hover{

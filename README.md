@@ -36,3 +36,4 @@ These are some screenshots of the portfolio:
 ![final screenshot of the portfolio](./Assets/images/webpage-3.png)
 
 This is a link to the deployed webpage:
+https://shukrim433.github.io/week-2-portfolio-challenge/

@@ -14,7 +14,7 @@
 
 - Then I styled these sections in css by adding a css variable to contain the main colours and font family of the page. I added borders, margins and paddings to the different sections to separate them.
 
-- I also made it so the hyper links in the navigation bar would take you to each section in the page when they got clicked on by giving each link a href that matched the id attribute of it's corresponding section. For example the hyper link "<a href = "#about-me"> about me </a>" matched "<section id="about-me">" .
+- I also made it so the hyper links in the navigation bar would take you to each section in the page when they got clicked on by giving each link a href that matched the id attribute of it's corresponding section.
 
 - I also used flex boxes in the header navigation bar and the 'work' main element to make the flex items more spaced out and the layout more presentable.
 
